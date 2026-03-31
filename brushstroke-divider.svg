@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 36" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Bristle/paper texture displacement -->
+    <filter id="brush-fx" x="-3%" y="-40%" width="106%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.022 0.22"
+        numOctaves="4" seed="9" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4.5"
+        xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+      <feGaussianBlur in="displaced" stdDeviation="0.4"/>
+    </filter>
+    <!-- Lighter blur for secondary bristle -->
+    <filter id="brush-light" x="-3%" y="-40%" width="106%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03 0.28"
+        numOctaves="3" seed="17" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3"
+        xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <!-- Main body — tapered at entry and exit, thickest in the middle -->
+  <path
+    d="M 6,20 C 30,17 80,13 160,17 C 240,21 330,16 420,14 C 448,13 466,13 476,15"
+    stroke="#2c2c2c" stroke-width="7.5" fill="none"
+    stroke-linecap="round" stroke-linejoin="round"
+    filter="url(#brush-fx)"
+    opacity="0.88"/>
+
+  <!-- Upper bristle break — slight separation suggesting loaded brush -->
+  <path
+    d="M 6,18 C 30,15 80,11 160,15 C 240,19 330,14 420,12 C 448,11 466,11 476,13"
+    stroke="#2c2c2c" stroke-width="2.5" fill="none"
+    stroke-linecap="round"
+    filter="url(#brush-light)"
+    opacity="0.30"/>
+
+  <!-- Fine dry-brush edge — barely there -->
+  <path
+    d="M 6,22 C 30,19 80,15 160,19 C 240,23 330,18 420,16 C 448,15 466,15 476,17"
+    stroke="#2c2c2c" stroke-width="1" fill="none"
+    stroke-linecap="round"
+    filter="url(#brush-light)"
+    opacity="0.16"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <defs>
+    <!-- Worn/aged texture for the stamp surface -->
+    <filter id="worn" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.08" numOctaves="4" seed="12" result="noise"/>
+      <feColorMatrix type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 -4 5"
+        in="noise" result="mask"/>
+      <feComposite in="SourceGraphic" in2="mask" operator="in" result="worn"/>
+      <feBlend in="SourceGraphic" in2="worn" mode="multiply"/>
+    </filter>
+    <!-- Slight edge displacement for hand-carved look -->
+    <filter id="carved" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="3" seed="5" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8"
+        xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <!-- Solid vermillion ground -->
+  <rect width="80" height="80" fill="#c23a2b" rx="1"/>
+
+  <!-- Outer border (double-line traditional seal border) -->
+  <rect x="3"   y="3"   width="74" height="74" fill="none"
+        stroke="#f5f0e8" stroke-width="2"   stroke-opacity="0.82" filter="url(#carved)"/>
+  <rect x="7.5" y="7.5" width="65" height="65" fill="none"
+        stroke="#f5f0e8" stroke-width="0.9" stroke-opacity="0.50" filter="url(#carved)"/>
+
+  <!-- Initials — CHANGE "YN" to your own initials -->
+  <text x="40" y="46"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="27"
+        font-weight="400"
+        fill="#f5f0e8"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        letter-spacing="4"
+        filter="url(#carved)"
+        opacity="0.90">YN</text>
+
+  <!-- Aged surface overlay -->
+  <rect width="80" height="80" fill="#7a1010" filter="url(#worn)" opacity="0.18" rx="1"/>
+</svg>

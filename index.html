@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — ECE Portfolio</title>
+
+  <!-- Preload hero raster assets -->
+  <link rel="preload" as="image" href="tree.png" />
+  <link rel="preload" as="image" href="flowers.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@300;400&family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="main-nav" role="navigation" aria-label="Main">
+  <span class="nav-brand">Your Name</span>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  <ul class="nav-links" role="list">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#interests">Interests</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#connect">Connect</a></li>
+  </ul>
+  <!-- Sliding active indicator -->
+  <span class="nav-indicator" aria-hidden="true"></span>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="home" class="hero" aria-label="Introduction">
+
+  <!-- Left: branch painting -->
+  <div class="hero-art" aria-hidden="true">
+    <div class="branch-container">
+      <!-- Branch image — revealed by wipe overlay in Phase 1 -->
+      <img class="branch-img" src="tree.png" alt=""
+           width="900" height="1080" fetchpriority="high" />
+      <!-- Blossom overlay — draws left to right in Phase 2 -->
+      <img class="blossoms-img" src="flowers.png" alt=""
+           width="900" height="1080" />
+      <!-- Paper-colored overlay that slides away to reveal branch -->
+      <div class="branch-wipe"></div>
+    </div>
+  </div>
+
+  <!-- Right: text content -->
+  <div class="hero-text">
+    <p class="hero-eyebrow hero-animate" style="--seq:0">
+      Electrical &amp; Computer Engineering · Georgia Tech
+    </p>
+    <h1 class="hero-name hero-animate" style="--seq:1">Your Name</h1>
+    <p class="hero-role hero-animate" style="--seq:2">Software Engineer</p>
+    <p class="hero-tagline hero-animate" style="--seq:2">
+      Building systems that matter.<br>Curious about everything.
+    </p>
+
+    <!-- Seal stamp — stamps in last -->
+    <img class="hero-seal hero-animate" src="seal-stamp.svg"
+         alt="Personal seal" style="--seq:3" width="64" height="64" />
+
+    <!-- Ambient petals (CSS-only, hero only) -->
+    <div class="petals-wrap" aria-hidden="true">
+      <span class="petal" style="--px:62%;--pd:3.8s;--dur:50s;--sw:9s"></span>
+      <span class="petal" style="--px:74%;--pd:5.6s;--dur:44s;--sw:11s;--ps:0.78"></span>
+      <span class="petal" style="--px:55%;--pd:7.4s;--dur:54s;--sw:8s;--ps:1.1"></span>
+    </div>
+
+    <a href="#about" class="hero-cta hero-animate" style="--seq:3">
+      View my work
+    </a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section id="about" class="page-section">
+  <div class="section-inner">
+    <header class="section-header">
+      <p class="section-label fade-up">Biography</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">About Me</h2>
+    </header>
+
+    <div class="about-layout">
+      <div class="about-text">
+        <p class="fade-up" style="--fd:0.1s">
+          [Your name], studying Electrical and Computer Engineering at Georgia Tech.
+          Replace this paragraph with a compelling opening — draw from your elevator pitch.
+          Tell the reader who you are, where you come from, and what drives you as an engineer.
+        </p>
+        <p class="fade-up" style="--fd:0.18s">
+          [Describe where you grew up and how it shaped your perspective. Strike a balance
+          between building your personal brand and not oversharing personal details. Aim for
+          2–3 sentences that feel specific and genuine, not generic.]
+        </p>
+        <p class="fade-up" style="--fd:0.26s">
+          [What sparked your interest in ECE. The problem space that excites you.
+          Where you see yourself going and why Georgia Tech is part of that path.]
+        </p>
+      </div>
+
+      <div class="about-aside fade-up" style="--fd:0.14s">
+        <!-- Optional: replace placeholder with <img src="photo.jpg" ... /> -->
+        <div class="photo-placeholder">[ Photo ]</div>
+        <blockquote class="pull-quote">
+          "A meaningful quote that reflects your values or approach to work."
+          <cite>— Source</cite>
+        </blockquote>
+        <!-- Vertical Chinese motto — replace text with your own phrase -->
+        <span class="vertical-motto" lang="zh" aria-label="Still waters run deep">靜水流深</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brushstroke divider #1 -->
+<div class="brush-divider" aria-hidden="true">
+  <img src="brushstroke-divider.svg" alt="" class="brush-svg" width="480" height="36" />
+</div>
+
+<!-- ══════════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════════ -->
+<section id="projects" class="page-section alt-bg">
+  <div class="section-inner">
+    <header class="section-header">
+      <p class="section-label fade-up">Work &amp; Discovery</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">Projects</h2>
+    </header>
+
+    <!-- Featured: Discovery Project -->
+    <article class="project-card featured fade-up" style="--fd:0.1s">
+      <div class="project-thumb">
+        <div class="img-placeholder">[ Project image or screenshot ]</div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">Discovery Project</span>
+          <span class="tag">Tool / Language</span>
+          <span class="tag">Skill Demonstrated</span>
+        </div>
+        <h3 class="project-title">[Discovery Project Title]</h3>
+        <p class="project-desc">
+          [500+ word description of your Individual Discovery Project. Describe the problem
+          you investigated, your methodology, what you built or analyzed, and the results.
+          Explain significance and how it connects to your engineering interests.]
+        </p>
+        <p class="project-desc" style="margin-top:0.8rem">
+          [Continue — your specific role and contributions, tools or languages used,
+          challenges overcome, and what you would pursue next.]
+        </p>
+        <div class="img-placeholder" style="margin-top:1rem">[ Second figure — graph, schematic, or demo ]</div>
+      </div>
+    </article>
+
+    <hr class="ink-rule" />
+
+    <!-- Additional project -->
+    <article class="project-card fade-up" style="--fd:0.12s">
+      <div class="project-thumb small">
+        <div class="img-placeholder">[ Screenshot ]</div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">Tool</span>
+          <span class="tag">Skill</span>
+        </div>
+        <h3 class="project-title">[Project 2 Title]</h3>
+        <p class="project-desc">
+          [Brief overview — what it does, what you learned, and why it matters.
+          A class lab, research contribution, or personal project all belong here.]
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     EXPERIENCE
+══════════════════════════════════════════ -->
+<section id="experience" class="page-section">
+  <div class="section-inner">
+    <header class="section-header">
+      <p class="section-label fade-up">Work · Research · Leadership</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">Experience</h2>
+    </header>
+
+    <div class="timeline">
+      <div class="timeline-item fade-up" style="--fd:0.10s">
+        <div class="timeline-meta">
+          <span class="timeline-date">Jun – Aug [Year]</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">[Job Title]</h3>
+          <p class="timeline-company">[Company] · [Location / Remote]</p>
+          <ul>
+            <li>[What you did; quantify impact where possible]</li>
+            <li>[Tools, languages, or methods used]</li>
+            <li>[Key outcome or deliverable]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-up" style="--fd:0.16s">
+        <div class="timeline-meta">
+          <span class="timeline-date">[Month Year] – Present</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">Undergraduate Research Assistant</h3>
+          <p class="timeline-company">[Lab / PI Name] · Georgia Tech</p>
+          <ul>
+            <li>[What the lab studies and your specific contribution]</li>
+            <li>[Methods, tools, or equipment used]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-up" style="--fd:0.22s">
+        <div class="timeline-meta">
+          <span class="timeline-date">[Year] – [Year]</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">[Role] · [Organization]</h3>
+          <p class="timeline-company">Leadership / Volunteer</p>
+          <ul>
+            <li>[Responsibilities and outcomes]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brushstroke divider #2 -->
+<div class="brush-divider" aria-hidden="true">
+  <img src="brushstroke-divider.svg" alt="" class="brush-svg" width="480" height="36" />
+</div>
+
+<!-- ══════════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════ -->
+<section id="skills" class="page-section alt-bg">
+  <div class="section-inner">
+    <header class="section-header">
+      <p class="section-label fade-up">Technical &amp; Professional</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">Skills</h2>
+    </header>
+
+    <div class="skills-grid">
+      <div class="skill-group fade-up" style="--fd:0.10s">
+        <h3 class="skill-group-label">Programming</h3>
+        <div class="tag-group">
+          <span class="tag">Python</span>
+          <span class="tag">C / C++</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">Java</span>
+          <span class="tag">[Add more]</span>
+        </div>
+      </div>
+      <div class="skill-group fade-up" style="--fd:0.16s">
+        <h3 class="skill-group-label">Hardware &amp; Lab</h3>
+        <div class="tag-group">
+          <span class="tag">Oscilloscope</span>
+          <span class="tag">Multimeter</span>
+          <span class="tag">Soldering</span>
+          <span class="tag">PCB Design</span>
+        </div>
+      </div>
+      <div class="skill-group fade-up" style="--fd:0.22s">
+        <h3 class="skill-group-label">Tools</h3>
+        <div class="tag-group">
+          <span class="tag">Git / GitHub</span>
+          <span class="tag">LTspice</span>
+          <span class="tag">LaTeX</span>
+          <span class="tag">[Add more]</span>
+        </div>
+      </div>
+      <div class="skill-group fade-up" style="--fd:0.28s">
+        <h3 class="skill-group-label">Professional</h3>
+        <div class="tag-group">
+          <span class="tag">Technical Writing</span>
+          <span class="tag">Public Speaking</span>
+          <span class="tag">Team Collaboration</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     EDUCATION
+══════════════════════════════════════════ -->
+<section id="education" class="page-section">
+  <div class="section-inner">
+    <header class="section-header">
+      <p class="section-label fade-up">Academic Background</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">Education</h2>
+    </header>
+
+    <div class="timeline">
+      <div class="timeline-item fade-up" style="--fd:0.10s">
+        <div class="timeline-meta">
+          <span class="timeline-date">Expected [Year]</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">B.S. Electrical &amp; Computer Engineering</h3>
+          <p class="timeline-company">Georgia Institute of Technology · Atlanta, GA</p>
+          <ul>
+            <li>GPA: [X.XX] · [Thread / Concentration]</li>
+            <li>[Honors program, scholarship, or merit designation]</li>
+            <li>[Relevant clubs or academic organizations]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-up" style="--fd:0.16s">
+        <div class="timeline-meta">
+          <span class="timeline-date">[Year]</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">[High School Name]</h3>
+          <p class="timeline-company">[City, State]</p>
+          <ul>
+            <li>[AP courses, honors, clubs, or notable achievements]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="ink-rule" />
+
+    <h3 class="sub-section-label fade-up">Relevant Coursework</h3>
+    <div class="course-list fade-up" style="--fd:0.1s">
+      <div class="course-entry">
+        <span class="course-code">ECE 1100</span>
+        <span class="course-name">Introduction to Electrical &amp; Computer Engineering</span>
+        <p class="course-desc">[Brief description and key takeaway.]</p>
+      </div>
+      <div class="course-entry">
+        <span class="course-code">[ECE ####]</span>
+        <span class="course-name">[Course Title]</span>
+        <p class="course-desc">[Description and notable project or lab.]</p>
+      </div>
+      <div class="course-entry">
+        <span class="course-code">[MATH/PHYS]</span>
+        <span class="course-name">[Course Title]</span>
+        <p class="course-desc">[Description.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ACHIEVEMENTS
+══════════════════════════════════════════ -->
+<section id="achievements" class="page-section alt-bg">
+  <div class="section-inner">
+    <header class="section-header">
+      <p class="section-label fade-up">Awards · Honors · Recognition</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">Achievements</h2>
+    </header>
+
+    <div class="timeline">
+      <div class="timeline-item fade-up" style="--fd:0.10s">
+        <div class="timeline-meta">
+          <span class="timeline-date">[Year]</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">[Award / Scholarship Name]</h3>
+          <p class="timeline-company">[Awarding Organization]</p>
+          <p>[Brief description: what it recognizes and why you received it.]</p>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-up" style="--fd:0.16s">
+        <div class="timeline-meta">
+          <span class="timeline-date">[Year]</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">[Competition Name] — [Place]</h3>
+          <p class="timeline-company">[Organization]</p>
+          <p>[What you built and the outcome.]</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="ink-rule" />
+
+    <h3 class="sub-section-label fade-up">Publications &amp; Patents</h3>
+    <div class="img-placeholder fade-up" style="--fd:0.1s">
+      [ List any co-authored papers, conference proceedings, posters, or patents.
+        Use standard citation format (IEEE, APA, etc.). ]
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     INTERESTS
+══════════════════════════════════════════ -->
+<section id="interests" class="page-section">
+  <div class="section-inner">
+    <header class="section-header">
+      <p class="section-label fade-up">Passions · Life Outside the Lab</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">Interests &amp; Hobbies</h2>
+    </header>
+
+    <p class="fade-up body-text" style="--fd:0.08s">
+      Engineering is only one dimension of who I am. These pursuits restore my energy
+      and shape how I think.
+    </p>
+
+    <div class="interests-grid">
+      <div class="interest-block fade-up" style="--fd:0.12s">
+        <h3 class="interest-label">[Interest — e.g., Music]</h3>
+        <p>[Describe this hobby or passion. How long? What you love about it.
+           How it connects to your personality or work style.]</p>
+      </div>
+      <div class="interest-block fade-up" style="--fd:0.18s">
+        <h3 class="interest-label">[Interest — e.g., Hiking]</h3>
+        <p>[Description. Be genuine — this is a chance to connect as a whole person,
+           not just a GPA.]</p>
+      </div>
+      <div class="interest-block fade-up" style="--fd:0.24s">
+        <h3 class="interest-label">[Interest — e.g., Reading]</h3>
+        <p>[Description.]</p>
+      </div>
+    </div>
+
+    <div class="tag-group fade-up" style="--fd:0.28s; margin-top:1.5rem">
+      <span class="tag">Book: [Title]</span>
+      <span class="tag">Film: [Title]</span>
+      <span class="tag">Podcast: [Title]</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CAREER GOALS
+══════════════════════════════════════════ -->
+<section id="goals" class="page-section alt-bg">
+  <div class="section-inner">
+    <header class="section-header">
+      <p class="section-label fade-up">Vision · Roadmap · Milestones</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">Career Goals</h2>
+    </header>
+
+    <p class="fade-up body-text" style="--fd:0.10s">
+      [Long-term aspiration: what field, role, or impact do you ultimately want to achieve?
+      Be specific — a vague "I want to make a difference" is less compelling than
+      "I want to develop embedded systems for medical devices."]
+    </p>
+
+    <h3 class="sub-section-label fade-up" style="margin-top:2rem">Steps to Get There</h3>
+    <ol class="goal-steps fade-up" style="--fd:0.14s">
+      <li>[Step 1 — complete concentration coursework in X by Year 2]</li>
+      <li>[Step 2 — secure a summer internship in ABC by Spring 2027]</li>
+      <li>[Step 3 — join XYZ research lab or student organization]</li>
+      <li>[Step 4 — attend conference or workshop to learn about funding opportunities]</li>
+      <li>[Step 5 — pursue graduate school / full-time role in X field by graduation]</li>
+    </ol>
+
+    <div class="img-placeholder fade-up" style="--fd:0.18s; margin-top:1.5rem">
+      [ Timeline graphic: Year 1 → Year 2 → Year 3 → Year 4 → Post-Graduation ]
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     RESUME
+══════════════════════════════════════════ -->
+<section id="resume" class="page-section">
+  <div class="section-inner">
+    <header class="section-header">
+      <p class="section-label fade-up">Download or View</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">Resume</h2>
+    </header>
+
+    <div class="resume-actions fade-up" style="--fd:0.1s">
+      <a href="Resume.pdf" class="btn-primary" download>Download PDF</a>
+      <a href="Resume.pdf" class="btn-secondary" target="_blank" rel="noopener">Open in new tab</a>
+    </div>
+
+    <div class="fade-up" style="--fd:0.14s; margin-top:1.5rem">
+      <iframe src="Resume.pdf" width="100%" height="700" title="Resume"
+              style="border:none; display:block;"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONNECT
+══════════════════════════════════════════ -->
+<section id="connect" class="page-section alt-bg">
+  <div class="section-inner">
+    <header class="section-header">
+      <p class="section-label fade-up">Get in Touch</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">Connect</h2>
+    </header>
+
+    <p class="fade-up body-text" style="--fd:0.08s">
+      Open to conversations about engineering, research, internships, or shared interests.
+    </p>
+
+    <div class="connect-layout">
+      <!-- Social links -->
+      <nav class="social-links fade-up" style="--fd:0.12s" aria-label="Social profiles">
+        <a href="https://linkedin.com/in/YOUR-HANDLE" class="social-link" target="_blank" rel="noopener">
+          <span class="social-platform">LinkedIn</span>
+          <span class="social-handle">linkedin.com/in/your-handle</span>
+        </a>
+        <a href="https://github.com/YOUR-HANDLE" class="social-link" target="_blank" rel="noopener">
+          <span class="social-platform">GitHub</span>
+          <span class="social-handle">github.com/your-handle</span>
+        </a>
+        <a href="https://instagram.com/YOUR-HANDLE" class="social-link" target="_blank" rel="noopener">
+          <span class="social-platform">Instagram</span>
+          <span class="social-handle">@your-handle</span>
+        </a>
+        <a href="mailto:you@gatech.edu" class="social-link">
+          <span class="social-platform">Email</span>
+          <span class="social-handle">you@gatech.edu</span>
+        </a>
+      </nav>
+
+      <!-- Contact form -->
+      <form class="contact-form fade-up" style="--fd:0.18s" novalidate>
+        <div class="field-wrap">
+          <input type="text" id="fname" name="name" placeholder="Your name" class="field" autocomplete="name" />
+        </div>
+        <div class="field-wrap">
+          <input type="email" id="femail" name="email" placeholder="Your email" class="field" autocomplete="email" />
+        </div>
+        <div class="field-wrap">
+          <textarea name="message" id="fmsg" rows="5" placeholder="Your message…" class="field"></textarea>
+        </div>
+        <p class="field-note">
+          Connect this form to <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>
+          or Netlify Forms to make it functional.
+        </p>
+        <button type="submit" class="btn-submit">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="footer">
+  <p>Your Name · Electrical &amp; Computer Engineering · Georgia Tech · 2026</p>
+</footer>
+
+<script src="ink.js"></script>
+</body>
+</html>

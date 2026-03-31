@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect — Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Sans:wght@300;400&family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo"><span class="brush-stroke">Your Name</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="goals.html">Goals</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="coursework.html">Coursework</a></li>
+      <li><a href="interests.html">Interests</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <button class="nav-toggle">&#9776;</button>
+  </nav>
+
+  <div class="page-hero" data-glyph="緣">
+    <h1>Connect</h1>
+    <p>Network · Reach Out · Collaborate</p>
+  </div>
+
+  <main class="page-content">
+    <p>
+      I am always open to conversations about engineering, research, internships, or shared
+      interests. Feel free to reach out through any of the channels below.
+    </p>
+
+    <hr class="ink-rule" />
+
+    <h2 class="sub-heading">Social &amp; Professional</h2>
+    <ul class="social-list">
+      <li>
+        <a href="https://linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">
+          <span class="social-icon">in</span>
+          LinkedIn — linkedin.com/in/your-handle
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/YOUR-HANDLE" target="_blank" rel="noopener">
+          <span class="social-icon">&#123;&#125;</span>
+          GitHub — github.com/your-handle
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/YOUR-HANDLE" target="_blank" rel="noopener">
+          <span class="social-icon">&#9632;</span>
+          Instagram — @your-handle
+        </a>
+      </li>
+      <li>
+        <a href="mailto:your.email@gatech.edu">
+          <span class="social-icon">@</span>
+          Email — your.email@gatech.edu
+        </a>
+      </li>
+    </ul>
+
+    <hr class="ink-rule" />
+
+    <h2 class="sub-heading">Send a Message</h2>
+    <form style="display:flex; flex-direction:column; gap:1rem; max-width:500px; margin-top:0.5rem;">
+      <input type="text" placeholder="Your Name"
+        style="padding:0.65rem 1rem; border:1px solid rgba(26,18,8,0.25);
+               background:var(--paper-dark); font-family:var(--font-sans); font-size:0.9rem;
+               color:var(--ink); outline:none;" />
+      <input type="email" placeholder="Your Email"
+        style="padding:0.65rem 1rem; border:1px solid rgba(26,18,8,0.25);
+               background:var(--paper-dark); font-family:var(--font-sans); font-size:0.9rem;
+               color:var(--ink); outline:none;" />
+      <textarea rows="5" placeholder="Your message…"
+        style="padding:0.65rem 1rem; border:1px solid rgba(26,18,8,0.25);
+               background:var(--paper-dark); font-family:var(--font-sans); font-size:0.9rem;
+               color:var(--ink); resize:vertical; outline:none;"></textarea>
+      <p style="font-family:var(--font-sans); font-size:0.8rem; color:var(--ink-faint);">
+        Note: this form is a static template. To make it functional, connect it to a service
+        such as Formspree or Netlify Forms.
+      </p>
+      <button type="submit" class="btn-ink"
+        style="align-self:flex-start; border-color:var(--ink); color:var(--ink);">
+        Send
+      </button>
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Your Name · Built with ink and intention.</p>
+  </footer>
+  <script src="nav.js"></script>
+</body>
+</html>
