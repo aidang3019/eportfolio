@@ -784,6 +784,35 @@ section[id] { scroll-margin-top: calc(var(--nav-h) + 1rem); }
 }
 
 /* ════════════════════════════════════════════
+   SKILL ICONS
+════════════════════════════════════════════ */
+.skill-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--ink-faint);
+  display: block;
+  margin-bottom: 0.65rem;
+}
+
+/* ════════════════════════════════════════════
+   EDUCATION ICON
+════════════════════════════════════════════ */
+.edu-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.edu-icon {
+  width: 26px;
+  height: 26px;
+  color: var(--ink-faint);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+
+/* ════════════════════════════════════════════
    PUBLICATIONS / PAPERS
 ════════════════════════════════════════════ */
 .paper-list {
@@ -1329,8 +1358,12 @@ section[id] { scroll-margin-top: calc(var(--nav-h) + 1rem); }
   overflow: hidden;
 }
 
-.exp-details > ul {
+.exp-details > ul,
+.exp-details > div {
   overflow: hidden;
+}
+
+.exp-details > ul {
   padding-left: 1.1rem;
   margin-top: 0;
 }

@@ -172,24 +172,34 @@
           <span class="tag">Scale AI</span>
           <span class="tag">Egocentric Learning</span>
         </div>
-        <h3 class="project-title">EgoVerse</h3>
-        <p class="project-desc">
-          EgoVerse is an open ecosystem for curating, accessing, and learning from human
-          egocentric video data to accelerate robot learning. The core challenge in robotics
-          today is that training dexterous manipulation policies requires enormous amounts of
-          robot-specific demonstration data — expensive, slow, and hard to scale. EgoVerse
-          attacks this from a different angle: instead of collecting more robot data, we
-          leverage the vast wealth of human egocentric video that already exists.
-        </p>
-        <p class="project-desc" style="margin-top:0.8rem">
-          As a core member of the EgoVerse Team at Georgia Tech's Robot Learning and Reasoning
-          Lab, I spearheaded the development of human-to-robot transfer learning frameworks,
-          partnered with Scale AI to build custom data conversion and training pipelines
-          processing 250+ hours of video, and architected high-performance Zarr datasets
-          enabling seamless handling of up to 1,000 hours of multimodal data. The trained
-          cross-domain models can perform complex dexterous tasks by learning directly from
-          human demonstrations, significantly reducing reliance on robot-specific data.
-        </p>
+        <button class="exp-toggle" aria-expanded="false">
+          <span class="exp-header">
+            <h3 class="project-title" style="margin:0">EgoVerse</h3>
+            <span class="exp-icon" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="exp-details">
+          <div style="overflow:hidden">
+            <p class="project-desc" style="margin-top:0.7rem">
+              EgoVerse is an open ecosystem for curating, accessing, and learning from human
+              egocentric video data to accelerate robot learning. The core challenge in robotics
+              today is that training dexterous manipulation policies requires enormous amounts of
+              robot-specific demonstration data — expensive, slow, and hard to scale. EgoVerse
+              attacks this from a different angle: instead of collecting more robot data, we
+              leverage the vast wealth of human egocentric video that already exists.
+            </p>
+            <p class="project-desc" style="margin-top:0.8rem">
+              As a core member of the EgoVerse Team at Georgia Tech's Robot Learning and Reasoning
+              Lab, I spearheaded the development of human-to-robot transfer learning frameworks,
+              partnered with Scale AI to build custom data conversion and training pipelines
+              processing 250+ hours of video, and architected high-performance Zarr datasets
+              enabling seamless handling of up to 1,000 hours of multimodal data. The trained
+              cross-domain models can perform complex dexterous tasks by learning directly from
+              human demonstrations, significantly reducing reliance on robot-specific data.
+            </p>
+            <a href="https://egoverse.ai/" class="hero-cta" target="_blank" rel="noopener" style="margin-top:1rem">Visit project ↗</a>
+          </div>
+        </div>
       </div>
     </article>
 
@@ -207,14 +217,24 @@
           <span class="tag">Privacy-Preserving ML</span>
           <span class="tag">Nature Machine Intelligence</span>
         </div>
-        <h3 class="project-title">ConstellationNet</h3>
-        <p class="project-desc">
-          A novel graph neural network clustering framework developed at MIT CSAIL, proposing
-          state-of-the-art methods for training stability and cluster quality in
-          privacy-preserving settings. Built with custom loss functions, aggregations, and
-          message passing through residual edge connections, with group-based clipping and
-          dynamic model reinitialization. Published in Nature Machine Intelligence.
-        </p>
+        <button class="exp-toggle" aria-expanded="false">
+          <span class="exp-header">
+            <h3 class="project-title" style="margin:0">ConstellationNet</h3>
+            <span class="exp-icon" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="exp-details">
+          <div style="overflow:hidden">
+            <p class="project-desc" style="margin-top:0.7rem">
+              A novel graph neural network clustering framework developed at MIT CSAIL, proposing
+              state-of-the-art methods for training stability and cluster quality in
+              privacy-preserving settings. Built with custom loss functions, aggregations, and
+              message passing through residual edge connections, with group-based clipping and
+              dynamic model reinitialization. Published in Nature Machine Intelligence.
+            </p>
+            <a href="https://link.springer.com/article/10.1007/s10994-026-07025-x" class="hero-cta" target="_blank" rel="noopener" style="margin-top:1rem">Read paper ↗</a>
+          </div>
+        </div>
       </div>
     </article>
   </div>
@@ -399,6 +419,9 @@
 
     <div class="skills-grid">
       <div class="skill-group fade-up" style="--fd:0.10s">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="3" width="20" height="16" rx="2"/><polyline points="8 10 4 13 8 16"/><polyline points="16 10 20 13 16 16"/><line x1="12" y1="9" x2="12" y2="17"/>
+        </svg>
         <h3 class="skill-group-label">Programming</h3>
         <div class="tag-group">
           <span class="tag">Python</span>
@@ -409,6 +432,10 @@
         </div>
       </div>
       <div class="skill-group fade-up" style="--fd:0.16s">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="5" r="1.5"/><circle cx="5" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/><circle cx="8" cy="19" r="1.5"/><circle cx="16" cy="19" r="1.5"/><circle cx="12" cy="12" r="2"/>
+          <line x1="12" y1="6.5" x2="12" y2="10"/><line x1="6.4" y1="12" x2="10" y2="12"/><line x1="14" y1="12" x2="17.5" y2="12"/><line x1="9.1" y1="17.5" x2="10.8" y2="13.7"/><line x1="14.9" y1="17.5" x2="13.2" y2="13.7"/>
+        </svg>
         <h3 class="skill-group-label">Machine Learning &amp; AI</h3>
         <div class="tag-group">
           <span class="tag">PyTorch</span>
@@ -420,6 +447,9 @@
         </div>
       </div>
       <div class="skill-group fade-up" style="--fd:0.22s">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+        </svg>
         <h3 class="skill-group-label">Robotics &amp; Hardware</h3>
         <div class="tag-group">
           <span class="tag">Robotics</span>
@@ -432,6 +462,9 @@
         </div>
       </div>
       <div class="skill-group fade-up" style="--fd:0.28s">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
         <h3 class="skill-group-label">Tools</h3>
         <div class="tag-group">
           <span class="tag">Git</span>
@@ -461,12 +494,20 @@
           <span class="timeline-date">Expected Fall 2028</span>
         </div>
         <div class="timeline-body">
-          <h3 class="timeline-role">B.S. Electrical Engineering</h3>
-          <p class="timeline-company">Georgia Institute of Technology · Atlanta, GA</p>
+          <div class="edu-header">
+            <svg class="edu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/>
+            </svg>
+            <div>
+              <h3 class="timeline-role">B.S. Electrical Engineering</h3>
+              <p class="timeline-company">Georgia Institute of Technology · Atlanta, GA</p>
+            </div>
+          </div>
           <ul>
             <li>GPA: 4.00</li>
             <li>Eta Kappa Nu (HKN) · Rotor Jackets · Robot Learning and Reasoning Lab · Biomechatronics Lab 2</li>
           </ul>
+          </div><!-- /edu-header wrapper -->
         </div>
       </div>
     </div>
@@ -487,19 +528,19 @@
     <div class="paper-list fade-up" style="--fd:0.1s">
 
       <a class="paper-entry" href="https://egoverse.ai/" target="_blank" rel="noopener">
-        <span class="paper-venue">Georgia Tech RL² Lab</span>
+<span class="paper-venue">Georgia Tech RL² Lab</span>
         <span class="paper-title">EgoVerse: An Ecosystem for Curating, Accessing, and Learning from Human Data for Robot Learning</span>
         <span class="paper-arrow">↗</span>
       </a>
 
       <a class="paper-entry" href="https://link.springer.com/article/10.1007/s10994-026-07025-x" target="_blank" rel="noopener">
-        <span class="paper-venue">Nature Machine Intelligence</span>
+<span class="paper-venue">Nature Machine Intelligence</span>
         <span class="paper-title">ConstellationNet: Reinventing Clustering Through GNNs</span>
         <span class="paper-arrow">↗</span>
       </a>
 
       <a class="paper-entry" href="https://arxiv.org/abs/2406.00073" target="_blank" rel="noopener">
-        <span class="paper-venue">arXiv · 2024</span>
+<span class="paper-venue">arXiv · 2024</span>
         <span class="paper-title">A Novel Review of Stability Techniques for Improved Privacy-Preserving Machine Learning</span>
         <span class="paper-arrow">↗</span>
       </a>
