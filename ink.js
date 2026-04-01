@@ -333,6 +333,18 @@ function initStampButton() {
   });
 }
 
+/* ── 11. EXPERIENCE EXPAND / COLLAPSE ── */
+function initExpand() {
+  document.querySelectorAll('.exp-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const details = btn.nextElementSibling;
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      details.classList.toggle('open', !open);
+    });
+  });
+}
+
 /* ── BOOT ── */
 document.addEventListener('DOMContentLoaded', () => {
   initSkipIntro();
@@ -347,4 +359,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initAmbientPetals();
   initCursorTrail();
   initStampButton();
+  initExpand();
 });

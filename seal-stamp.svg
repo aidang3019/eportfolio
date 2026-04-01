@@ -29,7 +29,6 @@
   <rect x="7.5" y="7.5" width="65" height="65" fill="none"
         stroke="#f5f0e8" stroke-width="0.9" stroke-opacity="0.50" filter="url(#carved)"/>
 
-  <!-- Initials — CHANGE "YN" to your own initials -->
   <text x="40" y="46"
         font-family="Georgia, 'Times New Roman', serif"
         font-size="27"
@@ -39,7 +38,7 @@
         dominant-baseline="middle"
         letter-spacing="4"
         filter="url(#carved)"
-        opacity="0.90">YN</text>
+        opacity="0.90">AG</text>
 
   <!-- Aged surface overlay -->
   <rect width="80" height="80" fill="#7a1010" filter="url(#worn)" opacity="0.18" rx="1"/>

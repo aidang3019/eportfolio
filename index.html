@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — ECE Portfolio</title>
+  <title>Aidan Gao — ECE Portfolio</title>
 
   <!-- Preload hero raster assets -->
   <link rel="preload" as="image" href="tree.png" />
@@ -18,7 +18,7 @@
 
 <!-- ── NAV ── -->
 <nav class="nav" id="main-nav" role="navigation" aria-label="Main">
-  <span class="nav-brand">Your Name</span>
+  <span class="nav-brand">Aidan Gao</span>
   <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
   <ul class="nav-links" role="list">
     <li><a href="#about">About</a></li>
@@ -26,7 +26,7 @@
     <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#education">Education</a></li>
-    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#achievements">Publications</a></li>
     <li><a href="#interests">Interests</a></li>
     <li><a href="#resume">Resume</a></li>
     <li><a href="#connect">Connect</a></li>
@@ -57,12 +57,14 @@
   <!-- Right: text content -->
   <div class="hero-text">
     <p class="hero-eyebrow hero-animate" style="--seq:0">
-      Electrical &amp; Computer Engineering · Georgia Tech
+      Electrical Engineering · Georgia Tech
     </p>
-    <h1 class="hero-name hero-animate" style="--seq:1">Your Name</h1>
-    <p class="hero-role hero-animate" style="--seq:2">Software Engineer</p>
+    <h1 class="hero-name hero-animate" style="--seq:1">Aidan Gao</h1>
+    <p class="hero-role hero-animate" style="--seq:2">Electrical Engineer · Robotics Researcher</p>
     <p class="hero-tagline hero-animate" style="--seq:2">
-      Building systems that matter.<br>Curious about everything.
+      Passionate about robotics and the unknown — from Graph Neural Networks and AI-assisted
+      microfluidics to egocentric robot learning. Always looking for the next new thing,
+      and hoping to create impact from cutting-edge technology.
     </p>
 
     <!-- Seal stamp — stamps in last -->
@@ -95,27 +97,45 @@
     <div class="about-layout">
       <div class="about-text">
         <p class="fade-up" style="--fd:0.1s">
-          [Your name], studying Electrical and Computer Engineering at Georgia Tech.
-          Replace this paragraph with a compelling opening — draw from your elevator pitch.
-          Tell the reader who you are, where you come from, and what drives you as an engineer.
+          I've always learned fastest when I'm slightly in over my head, so I keep putting myself
+          there on purpose. This instinct to find the hardest problem in the room and talk my way
+          to a seat has shaped everything, and brought me across fields and countries. It took me
+          from graph neural networks and privacy-preserving machine learning at MIT CSAIL, to
+          training humanoid robots to walk with reinforcement learning at AgiBot in Shanghai, to
+          building cancer prediction models alongside clinicians at Cedars-Sinai. Now I'm a
+          first-year Electrical Engineering student at Georgia Tech, working on egocentric
+          human-to-robot transfer at the Robot and Reasoning Lab.
         </p>
         <p class="fade-up" style="--fd:0.18s">
-          [Describe where you grew up and how it shaped your perspective. Strike a balance
-          between building your personal brand and not oversharing personal details. Aim for
-          2–3 sentences that feel specific and genuine, not generic.]
+          Getting constantly hit by new things has taught me to get really good at ramping up fast.
+          Every new room I've entered has dropped me into a new codebase, a new domain, and a new
+          team that was already moving. Each time I had to earn my place by learning and
+          innovating, not by catching up quietly. That pattern has made me strong in machine
+          learning and reinforcement learning, where I've gone from reading papers to running
+          experiments to submitting work to top venues like Nature Machine Learning and Robotics:
+          Science and Systems. My go-to tools are Python and C++, and I've built with them from
+          low-level motor control on embedded hardware to large-scale distributed training jobs on
+          GPU clusters.
         </p>
         <p class="fade-up" style="--fd:0.26s">
-          [What sparked your interest in ECE. The problem space that excites you.
-          Where you see yourself going and why Georgia Tech is part of that path.]
+          Throughout all of my work, I've focused on one thing: I want to build intelligent systems
+          that don't just add a few accuracy points on a benchmark, but work in operating rooms, on
+          factory floors, in the places where getting it wrong actually matters. Crucial research is
+          so often never implemented in an impactful way, and I aim to help change that.
+        </p>
+        <p class="fade-up" style="--fd:0.32s">
+          When I'm not debugging training runs, I'm racing drones, playing competitive Splatoon, or
+          assembling a mechanical keyboard with more parts than some of my research projects.
         </p>
       </div>
 
       <div class="about-aside fade-up" style="--fd:0.14s">
-        <!-- Optional: replace placeholder with <img src="photo.jpg" ... /> -->
-        <div class="photo-placeholder">[ Photo ]</div>
+        <div class="photo-placeholder">
+          <img src="headshot.jpg" alt="Aidan Gao" style="width:100%; height:100%; object-fit:cover; border-radius:50%;" />
+        </div>
         <blockquote class="pull-quote">
-          "A meaningful quote that reflects your values or approach to work."
-          <cite>— Source</cite>
+          "We must all suffer from one of two pains: the pain of discipline or the pain of regret."
+          <cite>— Jim Rohn</cite>
         </blockquote>
         <!-- Vertical Chinese motto — replace text with your own phrase -->
         <span class="vertical-motto" lang="zh" aria-label="Still waters run deep">靜水流深</span>
@@ -139,47 +159,61 @@
       <h2 class="section-title fade-up" style="--fd:0.05s">Projects</h2>
     </header>
 
-    <!-- Featured: Discovery Project -->
+    <!-- Featured: EgoVerse -->
     <article class="project-card featured fade-up" style="--fd:0.1s">
       <div class="project-thumb">
-        <div class="img-placeholder">[ Project image or screenshot ]</div>
+        <video class="project-video" src="egoverse.mp4" autoplay muted loop playsinline
+               style="width:100%; display:block; border-radius:2px;"></video>
       </div>
       <div class="project-body">
         <div class="project-tags">
-          <span class="tag">Discovery Project</span>
-          <span class="tag">Tool / Language</span>
-          <span class="tag">Skill Demonstrated</span>
+          <span class="tag">Robot Learning</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Scale AI</span>
+          <span class="tag">Egocentric Learning</span>
         </div>
-        <h3 class="project-title">[Discovery Project Title]</h3>
+        <h3 class="project-title">EgoVerse</h3>
         <p class="project-desc">
-          [500+ word description of your Individual Discovery Project. Describe the problem
-          you investigated, your methodology, what you built or analyzed, and the results.
-          Explain significance and how it connects to your engineering interests.]
+          EgoVerse is an open ecosystem for curating, accessing, and learning from human
+          egocentric video data to accelerate robot learning. The core challenge in robotics
+          today is that training dexterous manipulation policies requires enormous amounts of
+          robot-specific demonstration data — expensive, slow, and hard to scale. EgoVerse
+          attacks this from a different angle: instead of collecting more robot data, we
+          leverage the vast wealth of human egocentric video that already exists.
         </p>
         <p class="project-desc" style="margin-top:0.8rem">
-          [Continue — your specific role and contributions, tools or languages used,
-          challenges overcome, and what you would pursue next.]
+          As a core member of the EgoVerse Team at Georgia Tech's Robot Learning and Reasoning
+          Lab, I spearheaded the development of human-to-robot transfer learning frameworks,
+          partnered with Scale AI to build custom data conversion and training pipelines
+          processing 250+ hours of video, and architected high-performance Zarr datasets
+          enabling seamless handling of up to 1,000 hours of multimodal data. The trained
+          cross-domain models can perform complex dexterous tasks by learning directly from
+          human demonstrations, significantly reducing reliance on robot-specific data.
         </p>
-        <div class="img-placeholder" style="margin-top:1rem">[ Second figure — graph, schematic, or demo ]</div>
       </div>
     </article>
 
     <hr class="ink-rule" />
 
-    <!-- Additional project -->
-    <article class="project-card fade-up" style="--fd:0.12s">
-      <div class="project-thumb small">
-        <div class="img-placeholder">[ Screenshot ]</div>
+    <!-- Additional project: ConstellationNet -->
+    <article class="project-card featured fade-up" style="--fd:0.12s">
+      <div class="project-thumb">
+        <img src="constellationnet.png" alt="ConstellationNet diagram" style="width:100%; display:block; border-radius:2px;" />
       </div>
       <div class="project-body">
         <div class="project-tags">
-          <span class="tag">Tool</span>
-          <span class="tag">Skill</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">GNN</span>
+          <span class="tag">Privacy-Preserving ML</span>
+          <span class="tag">Nature Machine Intelligence</span>
         </div>
-        <h3 class="project-title">[Project 2 Title]</h3>
+        <h3 class="project-title">ConstellationNet</h3>
         <p class="project-desc">
-          [Brief overview — what it does, what you learned, and why it matters.
-          A class lab, research contribution, or personal project all belong here.]
+          A novel graph neural network clustering framework developed at MIT CSAIL, proposing
+          state-of-the-art methods for training stability and cluster quality in
+          privacy-preserving settings. Built with custom loss functions, aggregations, and
+          message passing through residual edge connections, with group-based clipping and
+          dynamic model reinitialization. Published in Nature Machine Intelligence.
         </p>
       </div>
     </article>
@@ -197,47 +231,153 @@
     </header>
 
     <div class="timeline">
+
       <div class="timeline-item fade-up" style="--fd:0.10s">
         <div class="timeline-meta">
-          <span class="timeline-date">Jun – Aug [Year]</span>
+          <span class="timeline-date">Oct 2025 – Present</span>
         </div>
         <div class="timeline-body">
-          <h3 class="timeline-role">[Job Title]</h3>
-          <p class="timeline-company">[Company] · [Location / Remote]</p>
-          <ul>
-            <li>[What you did; quantify impact where possible]</li>
-            <li>[Tools, languages, or methods used]</li>
-            <li>[Key outcome or deliverable]</li>
-          </ul>
+          <button class="exp-toggle" aria-expanded="false">
+            <span class="exp-header">
+              <span>
+                <h3 class="timeline-role">Student Researcher</h3>
+                <p class="timeline-company">Robot Learning and Reasoning Lab · Atlanta, GA</p>
+              </span>
+              <span class="exp-icon" aria-hidden="true"></span>
+            </span>
+          </button>
+          <div class="exp-details">
+            <ul>
+              <li>Spearheaded development of egocentric human-to-robot transfer learning frameworks as a core member of the EgoVerse Team.</li>
+              <li>Partnered with Scale AI to engineer custom data conversion and training scripts, managing end-to-end transfer and processing of 250+ hours of video data.</li>
+              <li>Architected high-performance Zarr datasets to optimize data I/O, enabling seamless processing of up to 1,000 hours of multimodal data.</li>
+              <li>Trained cross-domain models for complex dexterous tasks by leveraging human demonstrations, reducing reliance on robot-specific data.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-up" style="--fd:0.13s">
+        <div class="timeline-meta">
+          <span class="timeline-date">Sep 2025 – Present</span>
+        </div>
+        <div class="timeline-body">
+          <button class="exp-toggle" aria-expanded="false">
+            <span class="exp-header">
+              <span>
+                <h3 class="timeline-role">Student Researcher</h3>
+                <p class="timeline-company">Biomechatronics Lab · Atlanta, GA</p>
+              </span>
+              <span class="exp-icon" aria-hidden="true"></span>
+            </span>
+          </button>
+          <div class="exp-details">
+            <ul>
+              <li>Built a needle insertion robot achieving millimeter-level accuracy, integrating closed-loop control and real-time feedback for precise clinical interventions.</li>
+              <li>Developed project plans for an AI system to identify candidates for pain intervention procedures, combining patient data analysis with predictive modeling.</li>
+              <li>Working on clinical robotics integration and conducting data analysis to support translational research from lab to bedside.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div class="timeline-item fade-up" style="--fd:0.16s">
         <div class="timeline-meta">
-          <span class="timeline-date">[Month Year] – Present</span>
+          <span class="timeline-date">Apr – Oct 2025</span>
         </div>
         <div class="timeline-body">
-          <h3 class="timeline-role">Undergraduate Research Assistant</h3>
-          <p class="timeline-company">[Lab / PI Name] · Georgia Tech</p>
-          <ul>
-            <li>[What the lab studies and your specific contribution]</li>
-            <li>[Methods, tools, or equipment used]</li>
-          </ul>
+          <button class="exp-toggle" aria-expanded="false">
+            <span class="exp-header">
+              <span>
+                <h3 class="timeline-role">Clinical Researcher</h3>
+                <p class="timeline-company">Cedars-Sinai · Los Angeles, CA</p>
+              </span>
+              <span class="exp-icon" aria-hidden="true"></span>
+            </span>
+          </button>
+          <div class="exp-details">
+            <ul>
+              <li>Developed and validated AI models for esophageal cancer staging and subtyping, achieving state-of-the-art accuracy using radiologist-annotated data and PyTorch.</li>
+              <li>Built outcome management models to predict surgical and treatment results, supporting clinical decision-making and translational research.</li>
+              <li>Engineered drug trial success probability models to assist in early-stage clinical trial evaluation.</li>
+              <li>Led data curation, model interpretability, and robustness work to support publication and clinical translation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-up" style="--fd:0.19s">
+        <div class="timeline-meta">
+          <span class="timeline-date">Feb – Aug 2025</span>
+        </div>
+        <div class="timeline-body">
+          <button class="exp-toggle" aria-expanded="false">
+            <span class="exp-header">
+              <span>
+                <h3 class="timeline-role">Nontrivial Fellow</h3>
+                <p class="timeline-company">Nontrivial · Remote</p>
+              </span>
+              <span class="exp-icon" aria-hidden="true"></span>
+            </span>
+          </button>
+          <div class="exp-details">
+            <ul>
+              <li>Designed AI-enabled, resin-printed microfluidic prototypes for low-cost, multiplex diagnosis of diseases of poverty; developed implementation plans targeting a 45% reduction in mortality over 10 years.</li>
+              <li>Utilized Ansys and COMSOL to model particle-laden fluid flow and evaluate chip separation efficacy.</li>
+              <li>Developed video-based bounding box models with near-perfect accuracy for robust and interpretable results.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div class="timeline-item fade-up" style="--fd:0.22s">
         <div class="timeline-meta">
-          <span class="timeline-date">[Year] – [Year]</span>
+          <span class="timeline-date">Jun – Aug 2025</span>
         </div>
         <div class="timeline-body">
-          <h3 class="timeline-role">[Role] · [Organization]</h3>
-          <p class="timeline-company">Leadership / Volunteer</p>
-          <ul>
-            <li>[Responsibilities and outcomes]</li>
-          </ul>
+          <button class="exp-toggle" aria-expanded="false">
+            <span class="exp-header">
+              <span>
+                <h3 class="timeline-role">Humanoid Robotics Intern</h3>
+                <p class="timeline-company">AgiBot · Shanghai, China</p>
+              </span>
+              <span class="exp-icon" aria-hidden="true"></span>
+            </span>
+          </button>
+          <div class="exp-details">
+            <ul>
+              <li>Upgraded codebase from Gazebo to MuJoCo, augmented Sim2Real robot integration, developed joint analysis scripts, and trained locomotion models via reinforcement learning (PyTorch + MuJoCo); improved efficiency of developing new tasks by 30%.</li>
+              <li>Designed Bézier curve-based joint position generation and created employee training documentation.</li>
+              <li>Upgraded robot functionality to add shoulder and elbow movements; deployed trained walking models improving walking speed by 10%.</li>
+            </ul>
+          </div>
         </div>
       </div>
+
+      <div class="timeline-item fade-up" style="--fd:0.28s">
+        <div class="timeline-meta">
+          <span class="timeline-date">Jan 2022 – Jun 2025</span>
+        </div>
+        <div class="timeline-body">
+          <button class="exp-toggle" aria-expanded="false">
+            <span class="exp-header">
+              <span>
+                <h3 class="timeline-role">Student Researcher</h3>
+                <p class="timeline-company">MIT CSAIL · Cambridge, MA</p>
+              </span>
+              <span class="exp-icon" aria-hidden="true"></span>
+            </span>
+          </button>
+          <div class="exp-details">
+            <ul>
+              <li>Researched privacy-preserving ML and GNN-based spatial clustering; proposed state-of-the-art methods improving training stability and cluster quality.</li>
+              <li>Developed novel clustering frameworks with custom losses, aggregations, and message passing via residual edge connections using PyTorch; implemented group-based clipping and dynamic model reinitialization.</li>
+              <li>Presented at the Joint Mathematics Meeting; published manuscript to Nature Machine Learning.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -264,34 +404,41 @@
           <span class="tag">Python</span>
           <span class="tag">C / C++</span>
           <span class="tag">MATLAB</span>
-          <span class="tag">Java</span>
-          <span class="tag">[Add more]</span>
+          <span class="tag">ROS</span>
+          <span class="tag">LaTeX</span>
         </div>
       </div>
       <div class="skill-group fade-up" style="--fd:0.16s">
-        <h3 class="skill-group-label">Hardware &amp; Lab</h3>
+        <h3 class="skill-group-label">Machine Learning &amp; AI</h3>
         <div class="tag-group">
-          <span class="tag">Oscilloscope</span>
-          <span class="tag">Multimeter</span>
-          <span class="tag">Soldering</span>
-          <span class="tag">PCB Design</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Reinforcement Learning</span>
+          <span class="tag">Deep Learning</span>
+          <span class="tag">Privacy-preserving ML</span>
+          <span class="tag">GNN-based Clustering</span>
+          <span class="tag">Clinical AI</span>
         </div>
       </div>
       <div class="skill-group fade-up" style="--fd:0.22s">
-        <h3 class="skill-group-label">Tools</h3>
+        <h3 class="skill-group-label">Robotics &amp; Hardware</h3>
         <div class="tag-group">
-          <span class="tag">Git / GitHub</span>
-          <span class="tag">LTspice</span>
-          <span class="tag">LaTeX</span>
-          <span class="tag">[Add more]</span>
+          <span class="tag">Robotics</span>
+          <span class="tag">MuJoCo</span>
+          <span class="tag">Sim2Real</span>
+          <span class="tag">Inverse Kinematics</span>
+          <span class="tag">CAD</span>
+          <span class="tag">3D Printing</span>
+          <span class="tag">Closed-loop PID</span>
         </div>
       </div>
       <div class="skill-group fade-up" style="--fd:0.28s">
-        <h3 class="skill-group-label">Professional</h3>
+        <h3 class="skill-group-label">Tools</h3>
         <div class="tag-group">
-          <span class="tag">Technical Writing</span>
-          <span class="tag">Public Speaking</span>
-          <span class="tag">Team Collaboration</span>
+          <span class="tag">Git</span>
+          <span class="tag">Ansys</span>
+          <span class="tag">COMSOL</span>
+          <span class="tag">Excel / Sheets</span>
+          <span class="tag">Word / Docs</span>
         </div>
       </div>
     </div>
@@ -311,51 +458,16 @@
     <div class="timeline">
       <div class="timeline-item fade-up" style="--fd:0.10s">
         <div class="timeline-meta">
-          <span class="timeline-date">Expected [Year]</span>
+          <span class="timeline-date">Expected Fall 2028</span>
         </div>
         <div class="timeline-body">
-          <h3 class="timeline-role">B.S. Electrical &amp; Computer Engineering</h3>
+          <h3 class="timeline-role">B.S. Electrical Engineering</h3>
           <p class="timeline-company">Georgia Institute of Technology · Atlanta, GA</p>
           <ul>
-            <li>GPA: [X.XX] · [Thread / Concentration]</li>
-            <li>[Honors program, scholarship, or merit designation]</li>
-            <li>[Relevant clubs or academic organizations]</li>
+            <li>GPA: 4.00</li>
+            <li>Eta Kappa Nu (HKN) · Rotor Jackets · Robot Learning and Reasoning Lab · Biomechatronics Lab 2</li>
           </ul>
         </div>
-      </div>
-
-      <div class="timeline-item fade-up" style="--fd:0.16s">
-        <div class="timeline-meta">
-          <span class="timeline-date">[Year]</span>
-        </div>
-        <div class="timeline-body">
-          <h3 class="timeline-role">[High School Name]</h3>
-          <p class="timeline-company">[City, State]</p>
-          <ul>
-            <li>[AP courses, honors, clubs, or notable achievements]</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <hr class="ink-rule" />
-
-    <h3 class="sub-section-label fade-up">Relevant Coursework</h3>
-    <div class="course-list fade-up" style="--fd:0.1s">
-      <div class="course-entry">
-        <span class="course-code">ECE 1100</span>
-        <span class="course-name">Introduction to Electrical &amp; Computer Engineering</span>
-        <p class="course-desc">[Brief description and key takeaway.]</p>
-      </div>
-      <div class="course-entry">
-        <span class="course-code">[ECE ####]</span>
-        <span class="course-name">[Course Title]</span>
-        <p class="course-desc">[Description and notable project or lab.]</p>
-      </div>
-      <div class="course-entry">
-        <span class="course-code">[MATH/PHYS]</span>
-        <span class="course-name">[Course Title]</span>
-        <p class="course-desc">[Description.]</p>
       </div>
     </div>
   </div>
@@ -367,40 +479,31 @@
 <section id="achievements" class="page-section alt-bg">
   <div class="section-inner">
     <header class="section-header">
-      <p class="section-label fade-up">Awards · Honors · Recognition</p>
-      <h2 class="section-title fade-up" style="--fd:0.05s">Achievements</h2>
+      <p class="section-label fade-up">Research &amp; Publications</p>
+      <h2 class="section-title fade-up" style="--fd:0.05s">Publications</h2>
     </header>
 
-    <div class="timeline">
-      <div class="timeline-item fade-up" style="--fd:0.10s">
-        <div class="timeline-meta">
-          <span class="timeline-date">[Year]</span>
-        </div>
-        <div class="timeline-body">
-          <h3 class="timeline-role">[Award / Scholarship Name]</h3>
-          <p class="timeline-company">[Awarding Organization]</p>
-          <p>[Brief description: what it recognizes and why you received it.]</p>
-        </div>
-      </div>
+    <h3 class="sub-section-label fade-up">Papers &amp; Projects</h3>
+    <div class="paper-list fade-up" style="--fd:0.1s">
 
-      <div class="timeline-item fade-up" style="--fd:0.16s">
-        <div class="timeline-meta">
-          <span class="timeline-date">[Year]</span>
-        </div>
-        <div class="timeline-body">
-          <h3 class="timeline-role">[Competition Name] — [Place]</h3>
-          <p class="timeline-company">[Organization]</p>
-          <p>[What you built and the outcome.]</p>
-        </div>
-      </div>
-    </div>
+      <a class="paper-entry" href="https://egoverse.ai/" target="_blank" rel="noopener">
+        <span class="paper-venue">Georgia Tech RL² Lab</span>
+        <span class="paper-title">EgoVerse: An Ecosystem for Curating, Accessing, and Learning from Human Data for Robot Learning</span>
+        <span class="paper-arrow">↗</span>
+      </a>
 
-    <hr class="ink-rule" />
+      <a class="paper-entry" href="https://link.springer.com/article/10.1007/s10994-026-07025-x" target="_blank" rel="noopener">
+        <span class="paper-venue">Nature Machine Intelligence</span>
+        <span class="paper-title">ConstellationNet: Reinventing Clustering Through GNNs</span>
+        <span class="paper-arrow">↗</span>
+      </a>
 
-    <h3 class="sub-section-label fade-up">Publications &amp; Patents</h3>
-    <div class="img-placeholder fade-up" style="--fd:0.1s">
-      [ List any co-authored papers, conference proceedings, posters, or patents.
-        Use standard citation format (IEEE, APA, etc.). ]
+      <a class="paper-entry" href="https://arxiv.org/abs/2406.00073" target="_blank" rel="noopener">
+        <span class="paper-venue">arXiv · 2024</span>
+        <span class="paper-title">A Novel Review of Stability Techniques for Improved Privacy-Preserving Machine Learning</span>
+        <span class="paper-arrow">↗</span>
+      </a>
+
     </div>
   </div>
 </section>
@@ -422,25 +525,27 @@
 
     <div class="interests-grid">
       <div class="interest-block fade-up" style="--fd:0.12s">
-        <h3 class="interest-label">[Interest — e.g., Music]</h3>
-        <p>[Describe this hobby or passion. How long? What you love about it.
-           How it connects to your personality or work style.]</p>
+        <h3 class="interest-label">Philosophy</h3>
+        <p>Thinking about how I think is one of the most fascinating things to do. I personally
+           subscribe to a mix of absurdism and stoicism — finding meaning in the struggle while
+           accepting what I can't control.</p>
       </div>
       <div class="interest-block fade-up" style="--fd:0.18s">
-        <h3 class="interest-label">[Interest — e.g., Hiking]</h3>
-        <p>[Description. Be genuine — this is a chance to connect as a whole person,
-           not just a GPA.]</p>
+        <h3 class="interest-label">Drone Racing</h3>
+        <p>Who wouldn't want to play a video game in real life? I find both the engineering of a
+           perfect drone and the precision needed to pilot it at over 80 mph to be incredibly
+           fascinating.</p>
       </div>
       <div class="interest-block fade-up" style="--fd:0.24s">
-        <h3 class="interest-label">[Interest — e.g., Reading]</h3>
-        <p>[Description.]</p>
+        <h3 class="interest-label">Calisthenics</h3>
+        <p>A strong body enables a strong mind. Functional strength is something most people
+           overlook, but something I value deeply.</p>
       </div>
     </div>
 
     <div class="tag-group fade-up" style="--fd:0.28s; margin-top:1.5rem">
-      <span class="tag">Book: [Title]</span>
-      <span class="tag">Film: [Title]</span>
-      <span class="tag">Podcast: [Title]</span>
+      <span class="tag">Book: Meditations — Marcus Aurelius</span>
+      <span class="tag">Film: Inception</span>
     </div>
   </div>
 </section>
@@ -456,23 +561,21 @@
     </header>
 
     <p class="fade-up body-text" style="--fd:0.10s">
-      [Long-term aspiration: what field, role, or impact do you ultimately want to achieve?
-      Be specific — a vague "I want to make a difference" is less compelling than
-      "I want to develop embedded systems for medical devices."]
+      Within five years, I aim to pursue a Ph.D. in robotics or machine learning, building
+      on my research foundation to push the boundary of what intelligent systems can do in
+      the real world. In ten years, I want to be a researcher at a major institution or
+      company — working on robotics systems that operate in hospitals, factories, and other
+      high-stakes environments where the work genuinely matters.
     </p>
 
-    <h3 class="sub-section-label fade-up" style="margin-top:2rem">Steps to Get There</h3>
+    <h3 class="sub-section-label fade-up" style="margin-top:2rem">Roadmap</h3>
     <ol class="goal-steps fade-up" style="--fd:0.14s">
-      <li>[Step 1 — complete concentration coursework in X by Year 2]</li>
-      <li>[Step 2 — secure a summer internship in ABC by Spring 2027]</li>
-      <li>[Step 3 — join XYZ research lab or student organization]</li>
-      <li>[Step 4 — attend conference or workshop to learn about funding opportunities]</li>
-      <li>[Step 5 — pursue graduate school / full-time role in X field by graduation]</li>
+      <li><strong>Year 1</strong> — Maintain a 4.0 GPA, build a strong academic foundation in Robotics and Signal Processing/AI threads, and continue active undergraduate research.</li>
+      <li><strong>Year 2</strong> — Publish 2 papers, develop meaningful personal relationships and a close friend group, pursue an internship or co-op in robotics or ML.</li>
+      <li><strong>Year 3</strong> — Continue publishing, secure a strong internship, take on TA/RA roles, and develop a cumulative personal philosophy.</li>
+      <li><strong>Post-Graduation</strong> — Enter a top Ph.D. program in robotics or machine learning, focused on systems that operate in clinical or industrial environments.</li>
+      <li><strong>10 Years</strong> — Lead research at a major company or institution, building intelligent systems that see real-world deployment and meaningful impact.</li>
     </ol>
-
-    <div class="img-placeholder fade-up" style="--fd:0.18s; margin-top:1.5rem">
-      [ Timeline graphic: Year 1 → Year 2 → Year 3 → Year 4 → Post-Graduation ]
-    </div>
   </div>
 </section>
 
@@ -515,41 +618,20 @@
     <div class="connect-layout">
       <!-- Social links -->
       <nav class="social-links fade-up" style="--fd:0.12s" aria-label="Social profiles">
-        <a href="https://linkedin.com/in/YOUR-HANDLE" class="social-link" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/aidan-gao/" class="social-link" target="_blank" rel="noopener">
           <span class="social-platform">LinkedIn</span>
-          <span class="social-handle">linkedin.com/in/your-handle</span>
+          <span class="social-handle">aidan-gao</span>
         </a>
-        <a href="https://github.com/YOUR-HANDLE" class="social-link" target="_blank" rel="noopener">
+        <a href="https://github.com/aidang3019" class="social-link" target="_blank" rel="noopener">
           <span class="social-platform">GitHub</span>
-          <span class="social-handle">github.com/your-handle</span>
+          <span class="social-handle">aidang3019</span>
         </a>
-        <a href="https://instagram.com/YOUR-HANDLE" class="social-link" target="_blank" rel="noopener">
-          <span class="social-platform">Instagram</span>
-          <span class="social-handle">@your-handle</span>
-        </a>
-        <a href="mailto:you@gatech.edu" class="social-link">
+        <a href="mailto:agao81@gatech.edu" class="social-link">
           <span class="social-platform">Email</span>
-          <span class="social-handle">you@gatech.edu</span>
+          <span class="social-handle">agao81@gatech.edu</span>
         </a>
       </nav>
 
-      <!-- Contact form -->
-      <form class="contact-form fade-up" style="--fd:0.18s" novalidate>
-        <div class="field-wrap">
-          <input type="text" id="fname" name="name" placeholder="Your name" class="field" autocomplete="name" />
-        </div>
-        <div class="field-wrap">
-          <input type="email" id="femail" name="email" placeholder="Your email" class="field" autocomplete="email" />
-        </div>
-        <div class="field-wrap">
-          <textarea name="message" id="fmsg" rows="5" placeholder="Your message…" class="field"></textarea>
-        </div>
-        <p class="field-note">
-          Connect this form to <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>
-          or Netlify Forms to make it functional.
-        </p>
-        <button type="submit" class="btn-submit">Send message</button>
-      </form>
     </div>
   </div>
 </section>
@@ -558,7 +640,7 @@
      FOOTER
 ══════════════════════════════════════════ -->
 <footer class="footer">
-  <p>Your Name · Electrical &amp; Computer Engineering · Georgia Tech · 2026</p>
+  <p>Aidan Gao · Electrical Engineering · Georgia Tech · 2028</p>
 </footer>
 
 <script src="ink.js"></script>
