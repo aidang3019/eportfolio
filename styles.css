@@ -181,8 +181,7 @@ section[id] { scroll-margin-top: calc(var(--nav-h) + 1rem); }
   position: absolute;
   inset: 0;
   z-index: 2;
-  /* Gradient: solid paper on left → transparent on right (feathered edge) */
-  background: linear-gradient(to right, var(--paper) 80%, transparent 100%);
+  background: var(--paper);
   transform: translateX(0);
   will-change: transform;
   animation: wipe-away 1.5s cubic-bezier(0.0, 0.0, 0.2, 1.0) 500ms forwards;
