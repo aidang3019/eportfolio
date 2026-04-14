@@ -333,7 +333,29 @@ function initStampButton() {
   });
 }
 
-/* ── 11. EXPERIENCE EXPAND / COLLAPSE ── */
+/* ── 11. SLIDESHOWS ── */
+function initSlideshows() {
+  document.querySelectorAll('.slideshow').forEach(show => {
+    const slides  = [...show.querySelectorAll('.slide')];
+    const counter = show.querySelector('.slide-counter');
+    let current   = 0;
+
+    slides[0].classList.add('active');
+
+    function goTo(n) {
+      slides[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+    }
+
+    show.querySelector('.slide-prev')?.addEventListener('click', () => goTo(current - 1));
+    show.querySelector('.slide-next')?.addEventListener('click', () => goTo(current + 1));
+  });
+}
+
+/* ── 12. EXPERIENCE EXPAND / COLLAPSE ── */
+
 function initExpand() {
   document.querySelectorAll('.exp-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -359,5 +381,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initAmbientPetals();
   initCursorTrail();
   initStampButton();
+  initSlideshows();
   initExpand();
 });
